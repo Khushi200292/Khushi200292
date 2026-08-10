@@ -419,9 +419,17 @@ Real-time location tracking system project — demonstrates broader development 
 
 <div align="center">
 
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=Khushi200292&show_icons=true&theme=github_dark&bg_color=05070D&title_color=00E5FF&icon_color=00FF9C&text_color=E6EDF3&border_color=00E5FF&border_radius=8&hide_border=false&count_private=true&cache_seconds=1800" alt="Khushi's GitHub Stats"/>
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Khushi200292&theme=github_dark" width="100%" alt="Profile Summary"/>
+
+</div>
+
+<div align="center">
+
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Khushi200292&theme=github_dark" alt="Repos per Language" height="160em"/>
 &nbsp;
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Khushi200292&layout=compact&theme=github_dark&bg_color=05070D&title_color=00E5FF&text_color=E6EDF3&border_color=00E5FF&border_radius=8&hide_border=false&langs_count=8&cache_seconds=1800" alt="Top Languages"/>
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Khushi200292&theme=github_dark" alt="Most Commit Language" height="160em"/>
+&nbsp;
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Khushi200292&theme=github_dark" alt="Stats" height="160em"/>
 
 </div>
 
