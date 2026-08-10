@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 200" width="900" height="200">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#05070D"/>
+      <stop offset="100%" style="stop-color:#0B1220"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0D1B35"/>
+      <stop offset="100%" style="stop-color:#0B1220"/>
+    </linearGradient>
+    <linearGradient id="headerLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00E5FF;stop-opacity:0"/>
+      <stop offset="30%" style="stop-color:#00E5FF;stop-opacity:1"/>
+      <stop offset="70%" style="stop-color:#00FF9C;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#00FF9C;stop-opacity:0"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="900" height="200" rx="10" fill="url(#bg)"/>
+  <rect x="1" y="1" width="898" height="198" rx="9" fill="none" stroke="#00E5FF" stroke-width="0.6" opacity="0.25"/>
+
+  <!-- Header -->
+  <text x="450" y="32" font-family="'Courier New', monospace" font-size="13" fill="#00E5FF" text-anchor="middle" letter-spacing="5" font-weight="700" opacity="0.9">🛡️  SECURITY ARSENAL</text>
+  <rect x="150" y="40" width="600" height="1" fill="url(#headerLine)" opacity="0.7"/>
+
+  <!-- Row 1: Recon / Network / Web Security -->
+  <!-- Card 1: Nmap -->
+  <rect x="30" y="58" width="110" height="50" rx="6" fill="url(#cardGrad)" stroke="#00E5FF" stroke-width="0.8" opacity="1"/>
+  <text x="85" y="78" font-family="'Courier New', monospace" font-size="16" text-anchor="middle" fill="#E6EDF3">🔎</text>
+  <text x="85" y="100" font-family="'Courier New', monospace" font-size="10" fill="#00E5FF" text-anchor="middle" letter-spacing="1" font-weight="700">NMAP</text>
+
+  <!-- Card 2: Wireshark -->
+  <rect x="153" y="58" width="110" height="50" rx="6" fill="url(#cardGrad)" stroke="#00E5FF" stroke-width="0.8" opacity="1"/>
+  <text x="208" y="78" font-family="'Courier New', monospace" font-size="16" text-anchor="middle" fill="#E6EDF3">🦈</text>
+  <text x="208" y="100" font-family="'Courier New', monospace" font-size="10" fill="#00E5FF" text-anchor="middle" letter-spacing="1" font-weight="700">WIRESHARK</text>
+
+  <!-- Card 3: Burp Suite -->
+  <rect x="276" y="58" width="110" height="50" rx="6" fill="url(#cardGrad)" stroke="#00FF9C" stroke-width="0.8" opacity="1"/>
+  <text x="331" y="78" font-family="'Courier New', monospace" font-size="16" text-anchor="middle" fill="#E6EDF3">🌐</text>
+  <text x="331" y="100" font-family="'Courier New', monospace" font-size="10" fill="#00FF9C" text-anchor="middle" letter-spacing="1" font-weight="700">BURP SUITE</text>
+
+  <!-- Card 4: SQLMap -->
+  <rect x="399" y="58" width="110" height="50" rx="6" fill="url(#cardGrad)" stroke="#00FF9C" stroke-width="0.8" opacity="1"/>
+  <text x="454" y="78" font-family="'Courier New', monospace" font-size="16" text-anchor="middle" fill="#E6EDF3">💉</text>
+  <text x="454" y="100" font-family="'Courier New', monospace" font-size="10" fill="#00FF9C" text-anchor="middle" letter-spacing="1" font-weight="700">SQLMAP</text>
+
+  <!-- Card 5: Metasploit -->
+  <rect x="522" y="58" width="110" height="50" rx="6" fill="url(#cardGrad)" stroke="#7C3AED" stroke-width="0.8" opacity="1"/>
+  <text x="577" y="78" font-family="'Courier New', monospace" font-size="16" text-anchor="middle" fill="#E6EDF3">💣</text>
+  <text x="577" y="100" font-family="'Courier New', monospace" font-size="10" fill="#7C3AED" text-anchor="middle" letter-spacing="1" font-weight="700">METASPLOIT</text>
+
+  <!-- Card 6: Kali Linux -->
+  <rect x="645" y="58" width="110" height="50" rx="6" fill="url(#cardGrad)" stroke="#7C3AED" stroke-width="0.8" opacity="1"/>
+  <text x="700" y="78" font-family="'Courier New', monospace" font-size="16" text-anchor="middle" fill="#E6EDF3">🐉</text>
+  <text x="700" y="100" font-family="'Courier New', monospace" font-size="10" fill="#7C3AED" text-anchor="middle" letter-spacing="1" font-weight="700">KALI LINUX</text>
+
+  <!-- Card 7: Ettercap -->
+  <rect x="768" y="58" width="110" height="50" rx="6" fill="url(#cardGrad)" stroke="#00E5FF" stroke-width="0.8" opacity="1"/>
+  <text x="823" y="78" font-family="'Courier New', monospace" font-size="16" text-anchor="middle" fill="#E6EDF3">🕸️</text>
+  <text x="823" y="100" font-family="'Courier New', monospace" font-size="10" fill="#00E5FF" text-anchor="middle" letter-spacing="1" font-weight="700">ETTERCAP</text>
+
+  <!-- Row 2: Dev Stack -->
+  <!-- Card 8: Python -->
+  <rect x="30" y="125" width="110" height="50" rx="6" fill="url(#cardGrad)" stroke="#00E5FF" stroke-width="0.8" opacity="1"/>
+  <text x="85" y="145" font-family="'Courier New', monospace" font-size="16" text-anchor="middle" fill="#E6EDF3">🐍</text>
+  <text x="85" y="167" font-family="'Courier New', monospace" font-size="10" fill="#00E5FF" text-anchor="middle" letter-spacing="1" font-weight="700">PYTHON</text>
+
+  <!-- Card 9: FastAPI -->
+  <rect x="153" y="125" width="110" height="50" rx="6" fill="url(#cardGrad)" stroke="#00E5FF" stroke-width="0.8" opacity="1"/>
+  <text x="208" y="145" font-family="'Courier New', monospace" font-size="16" text-anchor="middle" fill="#E6EDF3">⚡</text>
+  <text x="208" y="167" font-family="'Courier New', monospace" font-size="10" fill="#00E5FF" text-anchor="middle" letter-spacing="1" font-weight="700">FASTAPI</text>
+
+  <!-- Card 10: Flask -->
+  <rect x="276" y="125" width="110" height="50" rx="6" fill="url(#cardGrad)" stroke="#00FF9C" stroke-width="0.8" opacity="1"/>
+  <text x="331" y="145" font-family="'Courier New', monospace" font-size="16" text-anchor="middle" fill="#E6EDF3">🧪</text>
+  <text x="331" y="167" font-family="'Courier New', monospace" font-size="10" fill="#00FF9C" text-anchor="middle" letter-spacing="1" font-weight="700">FLASK</text>
+
+  <!-- Card 11: JavaScript -->
+  <rect x="399" y="125" width="110" height="50" rx="6" fill="url(#cardGrad)" stroke="#00FF9C" stroke-width="0.8" opacity="1"/>
+  <text x="454" y="145" font-family="'Courier New', monospace" font-size="16" text-anchor="middle" fill="#E6EDF3">🟨</text>
+  <text x="454" y="167" font-family="'Courier New', monospace" font-size="10" fill="#00FF9C" text-anchor="middle" letter-spacing="1" font-weight="700">JAVASCRIPT</text>
+
+  <!-- Card 12: SQLite -->
+  <rect x="522" y="125" width="110" height="50" rx="6" fill="url(#cardGrad)" stroke="#7C3AED" stroke-width="0.8" opacity="1"/>
+  <text x="577" y="145" font-family="'Courier New', monospace" font-size="16" text-anchor="middle" fill="#E6EDF3">🗄️</text>
+  <text x="577" y="167" font-family="'Courier New', monospace" font-size="10" fill="#7C3AED" text-anchor="middle" letter-spacing="1" font-weight="700">SQLITE</text>
+
+  <!-- Card 13: scikit-learn -->
+  <rect x="645" y="125" width="110" height="50" rx="6" fill="url(#cardGrad)" stroke="#7C3AED" stroke-width="0.8" opacity="1"/>
+  <text x="700" y="145" font-family="'Courier New', monospace" font-size="16" text-anchor="middle" fill="#E6EDF3">🤖</text>
+  <text x="700" y="167" font-family="'Courier New', monospace" font-size="10" fill="#7C3AED" text-anchor="middle" letter-spacing="1" font-weight="700">SCIKIT-LEARN</text>
+
+  <!-- Card 14: Linux -->
+  <rect x="768" y="125" width="110" height="50" rx="6" fill="url(#cardGrad)" stroke="#00E5FF" stroke-width="0.8" opacity="1"/>
+  <text x="823" y="145" font-family="'Courier New', monospace" font-size="16" text-anchor="middle" fill="#E6EDF3">🐧</text>
+  <text x="823" y="167" font-family="'Courier New', monospace" font-size="10" fill="#00E5FF" text-anchor="middle" letter-spacing="1" font-weight="700">LINUX</text>
+</svg>

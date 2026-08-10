@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 280" width="900" height="280">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#05070D"/>
+      <stop offset="50%" style="stop-color:#0B1220"/>
+      <stop offset="100%" style="stop-color:#0D1B35"/>
+    </linearGradient>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00E5FF;stop-opacity:0.9"/>
+      <stop offset="100%" style="stop-color:#00FF9C;stop-opacity:0.7"/>
+    </linearGradient>
+    <linearGradient id="glowLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00E5FF;stop-opacity:0"/>
+      <stop offset="50%" style="stop-color:#00E5FF;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#00FF9C;stop-opacity:0"/>
+    </linearGradient>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00E5FF"/>
+      <stop offset="60%" style="stop-color:#E6EDF3"/>
+      <stop offset="100%" style="stop-color:#00FF9C"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#00E5FF" stroke-width="0.15" opacity="0.15"/>
+    </pattern>
+    <clipPath id="heroClip">
+      <rect width="900" height="280" rx="12"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="280" rx="12" fill="url(#bgGrad)"/>
+  <rect width="900" height="280" rx="12" fill="url(#grid)" clip-path="url(#heroClip)"/>
+
+  <!-- Ambient glow spots -->
+  <ellipse cx="130" cy="140" rx="120" ry="80" fill="#00E5FF" opacity="0.04"/>
+  <ellipse cx="770" cy="140" rx="140" ry="90" fill="#7C3AED" opacity="0.06"/>
+  <ellipse cx="450" cy="280" rx="200" ry="60" fill="#00FF9C" opacity="0.03"/>
+
+  <!-- Border glow -->
+  <rect x="1" y="1" width="898" height="278" rx="11" fill="none" stroke="#00E5FF" stroke-width="0.8" opacity="0.3"/>
+
+  <!-- === LEFT: Shield + Circuit Art === -->
+  <!-- Main shield -->
+  <g transform="translate(98, 75)" filter="url(#softGlow)">
+    <path d="M65,0 L130,25 L130,85 Q130,130 65,155 Q0,130 0,85 L0,25 Z"
+          fill="none" stroke="url(#shieldGrad)" stroke-width="2.5" opacity="0.85"/>
+    <path d="M65,12 L118,33 L118,85 Q118,120 65,140 Q12,120 12,85 L12,33 Z"
+          fill="#00E5FF" opacity="0.04"/>
+    <!-- Lock icon inside shield -->
+    <rect x="48" y="68" width="34" height="28" rx="4" fill="none" stroke="#00E5FF" stroke-width="1.8" opacity="0.9"/>
+    <path d="M51,68 L51,60 Q51,45 65,45 Q79,45 79,60 L79,68" fill="none" stroke="#00E5FF" stroke-width="1.8" opacity="0.9"/>
+    <circle cx="65" cy="82" r="5" fill="#00FF9C" opacity="0.9"/>
+    <line x1="65" y1="87" x2="65" y2="92" stroke="#00FF9C" stroke-width="2" opacity="0.9"/>
+    <!-- Shield glow lines -->
+    <line x1="20" y1="50" x2="110" y2="50" stroke="#00E5FF" stroke-width="0.5" opacity="0.3"/>
+    <line x1="10" y1="100" x2="120" y2="100" stroke="#00E5FF" stroke-width="0.5" opacity="0.2"/>
+  </g>
+
+  <!-- Circuit lines from shield -->
+  <line x1="230" y1="142" x2="270" y2="142" stroke="#00E5FF" stroke-width="1" opacity="0.5"/>
+  <circle cx="232" cy="142" r="2.5" fill="#00E5FF" opacity="0.7"/>
+  <circle cx="268" cy="142" r="2.5" fill="#00FF9C" opacity="0.7"/>
+  <line x1="165" y1="115" x2="165" y2="85" stroke="#00E5FF" stroke-width="0.8" opacity="0.3"/>
+  <line x1="98" y1="190" x2="98" y2="215" stroke="#00FF9C" stroke-width="0.8" opacity="0.3"/>
+  <circle cx="98" cy="218" r="3" fill="none" stroke="#00FF9C" stroke-width="1" opacity="0.5"/>
+
+  <!-- === CENTER: Text Content === -->
+  <!-- Top label -->
+  <text x="450" y="62" font-family="'Courier New', monospace" font-size="11" fill="#00E5FF" text-anchor="middle" opacity="0.8" letter-spacing="4">[ CYBERSECURITY PORTFOLIO ]</text>
+
+  <!-- Main name -->
+  <text x="450" y="118" font-family="'Courier New', monospace" font-size="52" font-weight="700" fill="url(#textGrad)" text-anchor="middle" filter="url(#glow)" letter-spacing="2">KHUSHI SINGLA</text>
+
+  <!-- Role -->
+  <text x="450" y="148" font-family="'Courier New', monospace" font-size="15" fill="#E6EDF3" text-anchor="middle" opacity="0.9" letter-spacing="3">CYBERSECURITY STUDENT</text>
+
+  <!-- Divider line -->
+  <rect x="280" y="160" width="340" height="1.5" rx="1" fill="url(#glowLine)" opacity="0.7"/>
+
+  <!-- Specialty tags -->
+  <text x="310" y="185" font-family="'Courier New', monospace" font-size="11" fill="#00E5FF" opacity="0.85" letter-spacing="2">⬡ ETHICAL HACKING</text>
+  <text x="450" y="185" font-family="'Courier New', monospace" font-size="11" fill="#00FF9C" text-anchor="middle" opacity="0.5">•</text>
+  <text x="490" y="185" font-family="'Courier New', monospace" font-size="11" fill="#00E5FF" opacity="0.85" letter-spacing="2">OFFENSIVE SECURITY ⬡</text>
+
+  <!-- Network security tag -->
+  <text x="450" y="208" font-family="'Courier New', monospace" font-size="11" fill="#7C3AED" text-anchor="middle" opacity="0.9" letter-spacing="2">⬡ NETWORK SECURITY • PENETRATION TESTING ⬡</text>
+
+  <!-- Bottom row -->
+  <text x="450" y="248" font-family="'Courier New', monospace" font-size="10" fill="#E6EDF3" text-anchor="middle" opacity="0.35" letter-spacing="2">PYTHON  •  KALI LINUX  •  RED TEAM LEARNING</text>
+
+  <!-- === RIGHT: Network Nodes Visual === -->
+  <!-- Node cluster -->
+  <g transform="translate(750, 80)">
+    <!-- Central node -->
+    <circle cx="50" cy="80" r="14" fill="none" stroke="#00E5FF" stroke-width="1.5" opacity="0.8" filter="url(#glow)"/>
+    <circle cx="50" cy="80" r="5" fill="#00E5FF" opacity="0.9"/>
+
+    <!-- Outer nodes -->
+    <circle cx="15" cy="35" r="7" fill="none" stroke="#00FF9C" stroke-width="1.2" opacity="0.7"/>
+    <circle cx="15" cy="35" r="2.5" fill="#00FF9C" opacity="0.8"/>
+
+    <circle cx="90" cy="30" r="7" fill="none" stroke="#7C3AED" stroke-width="1.2" opacity="0.7"/>
+    <circle cx="90" cy="30" r="2.5" fill="#7C3AED" opacity="0.8"/>
+
+    <circle cx="95" cy="120" r="7" fill="none" stroke="#00E5FF" stroke-width="1.2" opacity="0.6"/>
+    <circle cx="95" cy="120" r="2.5" fill="#00E5FF" opacity="0.7"/>
+
+    <circle cx="10" cy="125" r="6" fill="none" stroke="#00FF9C" stroke-width="1" opacity="0.5"/>
+    <circle cx="10" cy="125" r="2" fill="#00FF9C" opacity="0.6"/>
+
+    <circle cx="50" cy="145" r="5" fill="none" stroke="#7C3AED" stroke-width="1" opacity="0.5"/>
+    <circle cx="50" cy="145" r="2" fill="#7C3AED" opacity="0.6"/>
+
+    <!-- Connecting lines -->
+    <line x1="50" y1="80" x2="15" y2="35" stroke="#00FF9C" stroke-width="1" opacity="0.4"/>
+    <line x1="50" y1="80" x2="90" y2="30" stroke="#7C3AED" stroke-width="1" opacity="0.4"/>
+    <line x1="50" y1="80" x2="95" y2="120" stroke="#00E5FF" stroke-width="1" opacity="0.4"/>
+    <line x1="50" y1="80" x2="10" y2="125" stroke="#00FF9C" stroke-width="0.8" opacity="0.3"/>
+    <line x1="50" y1="80" x2="50" y2="145" stroke="#7C3AED" stroke-width="0.8" opacity="0.3"/>
+    <line x1="15" y1="35" x2="90" y2="30" stroke="#00E5FF" stroke-width="0.6" opacity="0.2"/>
+    <line x1="95" y1="120" x2="10" y2="125" stroke="#00FF9C" stroke-width="0.6" opacity="0.2"/>
+
+    <!-- Pulse animation on center node -->
+    <circle cx="50" cy="80" r="14" fill="none" stroke="#00E5FF" stroke-width="1" opacity="0.5">
+      <animate attributeName="r" values="14;24;14" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;0;0.5" dur="3s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Small decorative binary text -->
+  <text x="760" y="252" font-family="'Courier New', monospace" font-size="8" fill="#00E5FF" opacity="0.15" letter-spacing="1">01101000 01100001 01100011 01101011</text>
+
+  <!-- Corner accent marks -->
+  <path d="M15,15 L30,15 M15,15 L15,30" stroke="#00E5FF" stroke-width="1.5" opacity="0.5"/>
+  <path d="M885,15 L870,15 M885,15 L885,30" stroke="#00E5FF" stroke-width="1.5" opacity="0.5"/>
+  <path d="M15,265 L30,265 M15,265 L15,250" stroke="#00FF9C" stroke-width="1.5" opacity="0.5"/>
+  <path d="M885,265 L870,265 M885,265 L885,250" stroke="#00FF9C" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- Animated scan line -->
+  <rect x="12" y="0" width="876" height="1.5" rx="1" fill="#00E5FF" opacity="0.4">
+    <animateTransform attributeName="transform" type="translate" values="0,20;0,260;0,20" dur="6s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.4;0.1;0.4" dur="6s" repeatCount="indefinite"/>
+  </rect>
+</svg>
