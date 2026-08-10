@@ -383,29 +383,7 @@ Real-time location tracking system project — demonstrates broader development 
 
 <br/>
 
-<!-- ══════════════════════════════════════════════════════════════ -->
-<!--                    CERTIFICATIONS                            -->
-<!-- ══════════════════════════════════════════════════════════════ -->
 
-<div align="center">
-
-## 🏆 CERTIFICATIONS & LEARNING
-
-</div>
-
-<div align="center">
-
-| Certificate | Provider | Domain |
-|-------------|----------|--------|
-| 🤖 Introduction to Generative AI | Simplilearn | AI/ML |
-
-</div>
-
-<br/>
-
-<div align="center"><img src="./assets/cyber-divider.svg" width="100%"/></div>
-
-<br/>
 
 <!-- ══════════════════════════════════════════════════════════════ -->
 <!--                    GITHUB ANALYTICS                          -->
