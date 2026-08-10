@@ -419,9 +419,15 @@ Real-time location tracking system project — demonstrates broader development 
 
 <div align="center">
 
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=Khushi200292&show_icons=true&theme=github_dark&bg_color=05070D&title_color=00E5FF&icon_color=00FF9C&text_color=E6EDF3&border_color=00E5FF&border_radius=8&hide_border=false&count_private=true" alt="Khushi's GitHub Stats"/>
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=Khushi200292&show_icons=true&theme=github_dark&bg_color=05070D&title_color=00E5FF&icon_color=00FF9C&text_color=E6EDF3&border_color=00E5FF&border_radius=8&hide_border=false&count_private=true&cache_seconds=1800" alt="Khushi's GitHub Stats"/>
+&nbsp;
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Khushi200292&layout=compact&theme=github_dark&bg_color=05070D&title_color=00E5FF&text_color=E6EDF3&border_color=00E5FF&border_radius=8&hide_border=false&langs_count=8&cache_seconds=1800" alt="Top Languages"/>
 
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Khushi200292&layout=compact&theme=github_dark&bg_color=05070D&title_color=00E5FF&text_color=E6EDF3&border_color=00E5FF&border_radius=8&hide_border=false&langs_count=8" alt="Top Languages"/>
+</div>
+
+<div align="center">
+
+[![GitHub Streak](https://streak-stats.demolab.com/?user=Khushi200292&theme=dark&background=05070D&border=00E5FF&stroke=00E5FF&ring=00FF9C&fire=7C3AED&currStreakNum=E6EDF3&sideNums=E6EDF3&currStreakLabel=00E5FF&sideLabels=00E5FF&dates=E6EDF3&border_radius=8)](https://github.com/Khushi200292)
 
 </div>
 
@@ -437,13 +443,9 @@ Real-time location tracking system project — demonstrates broader development 
 
 <div align="center">
 
-## 🐍 CONTRIBUTION ACTIVITY
+## 📈 CONTRIBUTION ACTIVITY
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Khushi200292/Khushi200292/output/github-contribution-grid-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Khushi200292/Khushi200292/output/github-contribution-grid-snake.svg">
-  <img alt="Contribution Snake" src="https://raw.githubusercontent.com/Khushi200292/Khushi200292/output/github-contribution-grid-snake-dark.svg" width="100%"/>
-</picture>
+[![Khushi's Contribution Graph](https://github-readme-activity-graph.vercel.app/graph?username=Khushi200292&bg_color=05070D&color=00E5FF&line=00FF9C&point=7C3AED&area=true&area_color=00E5FF&hide_border=false&border_color=00E5FF&radius=8&custom_title=Contribution%20Activity)](https://github.com/Khushi200292)
 
 </div>
 
